@@ -1,0 +1,20 @@
+{
+  "user":{
+    "email": { "type": "String", "required": true },
+    "password": { "type": "String", "required": true },
+    "company": { "type": "Array", "require": false}
+  },
+  "company": {
+    "name": { "type": "String", "required":true },
+    "owner": { "type": "ObjectId", "required":true },
+    "users": { "type": "Array", "required":false },
+    "admins": { "type": "Array", "required":false }
+  },
+  "addresses": {
+    "streets": { "type": "String", "required":false }
+  },
+  "categories": {
+    "id": { "type": "String", "required":false },
+    "name": { "type": "String", "required":false }
+  }
+}
